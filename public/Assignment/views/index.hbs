@@ -1,0 +1,88 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html Form</title>
+    <link rel="stylesheet" href="../public/style.css" />
+    <style>
+      * { box-sizing: border-box; } body { font-family: "Franklin Gothic
+      Medium", "Arial Narrow", Arial, sans-serif; margin: 15px 30px; font-size:
+      17px; padding: 8px; } .container { background-color: rgb(245, 241, 235);
+      padding: 5px 20px 15px 20px; border: 1px solid lightgray; border-radius:
+      5px; } input[type="text"], input[type="number"], input[type="email"],
+      input[type="password"], input[type="date"], select, textarea { width:
+      100%; padding: 12px; border: 2px solid rgb(90, 23, 99); margin: 10px; }
+      fieldset { background-color: white; width: 100%; padding: 12px; border:
+      2px solid rgb(230, 194, 235); } input[type="submit"] { background-color:
+      rgb(216, 154, 95); color: rgb(102, 7, 7); padding: 15px; border: none;
+      text-indent: 5px; font-size: 0.6cm; border-radius: 10px; cursor: pointer;
+      width: 25%; text-align: center; display: flex; justify-content: center; }
+      input[type="submit"]:hover { background-color: blueviolet; } img { height:
+      650px; } .clip { clip-path: circle(43% at 50% 50%); display: block;
+      margin-left: auto; margin-right: auto; width: 50%; } .sub{ display: flex;
+      justify-content: center; align-items: center; }
+
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+      <form action="/" method="POST">
+        <h1 align="center">Employee Contact Form</h1>
+        <p>Required Fields Are followed by *</p>
+        <p>
+          Employee Full Name
+          <input
+            type="text"
+            name="Name"
+            required
+            placeholder="Enter Your Name"
+          />
+        </p>
+        <p>
+          Address:
+          <textarea
+            name="Address"
+            id="address"
+            cols="50"
+            rows="5"
+            placeholder="Enter Your Address"
+          ></textarea>
+        </p>
+        <p>
+          Job Title
+          <input
+            type="text"
+            name="Position"
+            required
+            placeholder="Enter Your Name"
+          />
+        </p>
+        <fieldset>
+          <legend>Gender *</legend>
+          <p>
+            Male
+            <input type="radio" name="gender" value="Male" required id="" />
+            Female
+            <input type="radio" name="gender" value="Female" required id="" />
+          </p>
+        </fieldset>
+
+        <p>Email: *<input type="email" name="Email" id="Email" required /></p>
+        <p>
+          Mobile NO. *
+          <input type="number" name="Phone" id="Phone" required />
+        </p>
+        <p>
+          Emergency Contact
+          <input type="number" name="Phone2" id="Phone2" />
+        </p>
+        <hr />
+        <div class="sub">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
